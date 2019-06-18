@@ -2,13 +2,9 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
 
-/**
- * Fetch and log a request
- * @param {Request} request
- */
 async function handleRequest(request) {
-    const { greet } = wasm_bindgen;
+    const { random_color } = wasm_bindgen;
     await wasm_bindgen(wasm)
-    const greeting = greet()
-    return new Response(greeting, {status: 200})
+    let randomColor = random_color(Math.floor(Math.random() * 256))
+    return new Response(randomColor, {status: 200})
 }

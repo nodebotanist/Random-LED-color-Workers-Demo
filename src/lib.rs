@@ -1,8 +1,10 @@
 extern crate cfg_if;
 extern crate wasm_bindgen;
+extern crate css_colors;
 
 mod utils;
 
+use css_colors::{Color, hsl};
 use cfg_if::cfg_if;
 use wasm_bindgen::prelude::*;
 
@@ -17,6 +19,7 @@ cfg_if! {
 }
 
 #[wasm_bindgen]
-pub fn greet() -> String {
-    "Hello, wasm-worker!".to_string()
+pub fn random_color(hue:i32) -> String {
+    let new_color = hsl(hue, 100, 50);
+    new_color.to_rgb().to_css()
 }

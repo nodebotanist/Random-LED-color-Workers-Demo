@@ -1,0 +1,23 @@
+{
+  "name": "myColorDemo",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare worker project using [`wasm-pack`](https://github.com/rustwasm/wasm-pack).",
+  "main": "worker/worker.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodebotanist/Random-LED-color-Workers-Demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodebotanist/Random-LED-color-Workers-Demo/issues"
+  },
+  "homepage": "https://github.com/nodebotanist/Random-LED-color-Workers-Demo#readme"
+}

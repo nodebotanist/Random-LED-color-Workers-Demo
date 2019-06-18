@@ -1,5 +1,5 @@
 [package]
-name = "myColorDemo"
+name = "my_color_demo"
 version = "0.1.0"
 authors = ["nodebotanist <the@nodebotanist>"]
 edition = "2018"
@@ -26,7 +26,7 @@ console_error_panic_hook = { version = "0.1.1", optional = true }
 #
 # Unfortunately, `wee_alloc` requires nightly Rust when targeting wasm for now.
 wee_alloc = { version = "0.4.2", optional = true }
-random_color = "0.4.4"
+css-colors = "1.0.1"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.2"
